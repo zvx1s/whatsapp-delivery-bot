@@ -1,4 +1,5 @@
 # Bilingual WhatsApp Ordering Bot
+![Demo](demo.gif)
 
 A production-shaped WhatsApp Business ordering bot for small retail businesses.
 English and Spanish throughout. Built for a local florist; the conversation engine
