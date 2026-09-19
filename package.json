@@ -1,0 +1,25 @@
+{
+  "name": "whatsapp-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "harness": "node scripts/harness.js",
+    "i": "node scripts/harness.js -i",
+    "test": "node scripts/adversarial.js && node scripts/fuzzy.js",
+    "test:flow": "node scripts/adversarial.js",
+    "test:typos": "node scripts/fuzzy.js",
+    "probe": "node scripts/probe-fuzzy.js",
+    "replay": "node scripts/replay-manual.js",
+    "start": "node src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "stripe": "^22.5.0"
+  }
+}
