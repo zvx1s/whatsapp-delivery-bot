@@ -7,6 +7,14 @@ is business-agnostic and all customer-facing content lives in one config file.
 Runs entirely offline in dry-run mode — no Meta account, no Stripe keys, no phone
 needed to try it.
 
+> **Note on the sample config.** This was built for a real florist — an existing
+> client — for their actual shop. The shop name, owner names, address and contact
+> details in `config/shop.js` have been replaced with an anonymized stand-in, since
+> the client never agreed to be named publicly. Everything else is real: the catalog
+> structure, the 25 products, the price points, the bilingual copy and the whole
+> conversation flow are the working configuration with identifying details swapped
+> out — not a toy example.
+
 ```bash
 npm install
 npm test          # 86 assertions
@@ -147,11 +155,13 @@ turns into duplicate sends.
 
 ## Status
 
-Built for a real client. Never launched — declined at the pricing stage. The codebase,
-test suites and tooling are reusable, and the content layer is fully separated from the
-engine.
+Built for a local florist with a bilingual customer base. The build was completed and
+tested; the project was declined at the pricing stage and never went live, so there are no production metrics to report.
 
-All business details in this repo are fictional.
+The codebase, test suites and tooling are reusable — the content layer is fully
+separated from the engine, so configuring it for a different business is a single file.
+
+Client-identifying details have been anonymized (see the note at the top).
 
 ## License
 
