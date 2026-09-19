@@ -19,8 +19,16 @@ needed to try it.
 npm install
 npm test          # 86 assertions
 npm run i         # interactive terminal mode
+
 ```
 
+Requires Node 18+. `better-sqlite3` compiles a native module on install — if npm
+warns that install scripts were blocked, approve it and reinstall:
+
+```bash
+npm install-scripts approve better-sqlite3
+npm install
+```
 ---
 
 ## What it does
